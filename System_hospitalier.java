@@ -45,7 +45,7 @@ public class System_hospitalier {
 	}
 	
 	private String comparerDonnes() {
-		// Comparaison des données
+		// Patient 1, Patient 2 habitent dans la même ville
 		return "Cluster trouvé";
 	}
 
