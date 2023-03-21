@@ -34,8 +34,14 @@ public class System_hospitalier {
 	}
 	
 	private String analyserRequete(Requête requête) {
-		// Analyser la requête
-		return "requête analysée";
+		String str = requête.getPatient().getName()+" "+requête.getPatient().getAge()+"ans < ";
+		
+		for(Object s : requête.getSymptomes())
+		{
+			str = str + s + " ";
+		}
+		str = str + ">";
+		return str;
 	}
 	
 	private String comparerDonnes() {
